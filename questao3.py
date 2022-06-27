@@ -1,3 +1,8 @@
+'''
+Busca faturamentos máximo e mínimo em arquivo e conta número de dias
+com faturamento acima da média.
+'''
+
 import json
 
 def getMax(content):

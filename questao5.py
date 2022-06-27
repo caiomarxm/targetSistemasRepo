@@ -1,3 +1,7 @@
+'''
+Reverte string fornecida por usuário via console
+'''
+
 def revertString(string):
     reversedString = ''
     for i in range(len(string)):

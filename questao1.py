@@ -1,3 +1,7 @@
+'''
+Testa cálculo da soma proposta
+'''
+
 indice, soma, k = 13, 0, 0
 
 while k < indice:

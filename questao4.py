@@ -1,3 +1,7 @@
+'''
+Calcula percentual por estado no faturamento
+'''
+
 invoicing = {
         'SP': 67836.43, 
         'RJ': 36678.66,

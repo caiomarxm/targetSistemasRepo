@@ -1,3 +1,8 @@
+'''
+Checa se número fornecido via console faz parte da sequência
+de Fibonacci
+'''
+
 def getFibonacci(number):
     fibonacci = [0, 1]
     while fibonacci[-1] < number:
