@@ -22,13 +22,14 @@ def getPercentual(state):
 if __name__ == '__main__':
     
     total = getTotal(invoicing)
-    print('Para qual estado deseja calcular o percentual?')
-    print('Obs.: Inserir sigla (Exemplo: "SP" para São Paulo)')
-    state = input().upper()
+    percentual = {
+        'SP': 0, 
+        'RJ': 0,
+        'MG': 0,
+        'ES': 0,
+        'Outros': 0
+    }
 
-    try:
-        percentual = getPercentual(state)
-        print(f'{state} representa {percentual*100:.2f}% do faturamento mensal.')
-    except:
-        print('Não há informações suficientes para concluir requisição.')
-        print('Estados disponíveis: SP, RJ, MG e ES')
+    for state in percentual:
+        percentual[state] = getPercentual(state)
+        print(f'{state} representa {100*percentual[state]:.2f}% do total.')
